@@ -1,0 +1,58 @@
+/* CSS HEX */
+/* 
+--graphite: #292929ff;
+--charcoal: #585757ff;
+--linen: #f5ece4ff;
+--pumpkin-spice: #fc6a0aff;
+--molten-orange: #e74504ff; */
+
+img {
+    width: 500px;
+}
+
+
+/* ABOUT-ME SECTION */
+.about-info {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.about-info dt {
+    font-weight: 600;
+}
+
+.about-info dd {
+    margin: 0;
+}
+
+.about-me div p{
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* SKILL-SET SECTION */
+.skill-set {
+    padding: 60px 10%;
+
+}
+
+.skill-set h2 {
+    color: black;
+}
+
+.container-circ {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+/* PROJECTS SECTION */
