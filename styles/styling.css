@@ -124,6 +124,10 @@ html{
     -webkit-text-fill-color: transparent;
 }
 
+.hero-content{
+    padding-top: 10px;
+}
+
 
 .hero-content h1{
     font-family: "Orbitron", sans-serif;
