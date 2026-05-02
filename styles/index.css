@@ -6,7 +6,6 @@
 --pumpkin-spice: #fc6a0aff;
 --molten-orange: #e74504ff; */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@300;400;600&display=swap');
 
 *{
@@ -27,25 +26,20 @@ html{
     scroll-behavior: smooth;
 }
 
-/* FOR SCROLLBAR */
-/* Scrollbar width */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track (background) */
 ::-webkit-scrollbar-track {
     background: #292929; /* graphite */
 }
 
-/* Handle (the draggable part) */
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, #fc6a0a, #e74504);
     border-radius: 10px;
     box-shadow: 0 0 8px rgba(252, 106, 10, 0.4);
 }
 
-/* Hover effect */
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, #ff8c42, #fc6a0a);
 }
@@ -101,7 +95,7 @@ html{
     padding: 0 20px;
     background:
         radial-gradient(circle at center, rgba(0,0,0,0.4), transparent 60%),
-        url("../assets/salvaged_bg.jpg");
+        url("../assets/game/salvaged_bg.jpg");
 
     background-size: cover;
     background-position: center;
@@ -164,7 +158,6 @@ html{
     color: #f5ece4ff;
     font-size: 1.5rem;
     padding-top: 5px;
-
 }
 
 .hero-buttons {
@@ -219,8 +212,6 @@ html{
     z-index: 1;
     color: white;
 }
-
-
 
 /* BUTTONS */
 
@@ -312,24 +303,24 @@ html{
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(252, 106, 10, 0.5);
-  box-shadow: 0 0 20px rgba(255, 59, 59, 0.15);
+    transform: translateY(-5px);
+    border-color: rgba(252, 106, 10, 0.5);
+    box-shadow: 0 0 20px rgba(255, 59, 59, 0.15);
 }
 .feature-card h3 {
-  color: #ff3b3b;
-  margin-bottom: 10px;
+    color: #ff3b3b;
+    margin-bottom: 10px;
 }
 
 /* HOW TO PLAY */
 ol {
-  margin-top: 20px;
-  padding-left: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
 }
 
 ol li {
-  margin-bottom: 10px;
-  color: #ccc;
+    margin-bottom: 10px;
+    color: #ccc;
 }
 
 #howtoplay li {
@@ -351,15 +342,15 @@ ol li {
     margin-top: 20px;
 }
 .media-box {
-  height: 160px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 59, 59, 0.1);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #888;
-  transition: 0.3s;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 59, 59, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    transition: 0.3s;
 }
 .media-box video {
     width: 100%;
@@ -395,8 +386,8 @@ ol li {
 }
 
 .media-box:hover {
-  border-color: #ff3b3b;
-  box-shadow: 0 0 15px rgba(255, 59, 59, 0.2);
+    border-color: #ff3b3b;
+    box-shadow: 0 0 15px rgba(255, 59, 59, 0.2);
 }
 
 
@@ -461,20 +452,20 @@ ol li {
 
 /* CALL TO ACTION */
 .cta-section {
-  text-align: center;
-  padding: 120px 20px;
-  background: radial-gradient(circle at center, rgba(255, 59, 59, 0.1), transparent 60%);
-  font-family: "Orbitron", sans-serif;
+    text-align: center;
+    padding: 120px 20px;
+    background: radial-gradient(circle at center, rgba(255, 59, 59, 0.1), transparent 60%);
+    font-family: "Orbitron", sans-serif;
 }
 
 .cta-section h2 {
-  font-size: 2.2rem;
-  color: #fff;
+    font-size: 2.2rem;
+    color: #fff;
 }
 
 .cta-section p {
-  color: #e5e5e5;
-  margin-top: 10px;
+    color: #e5e5e5;
+    margin-top: 10px;
 }
 
 /* FOOTER */
@@ -522,7 +513,6 @@ ol li {
     font-weight: 600;
     text-shadow: 0 0 8px rgba(252, 106, 10, 0.4);
 }
-
 
 .footer:hover {
     box-shadow: 0 -5px 30px rgba(252, 106, 10, 0.15);

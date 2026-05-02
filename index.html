@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Salvaged</title>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">SALVAGED</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Salvaged</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#howtoplay">How to Play</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#developers">Developers</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Every <span class="gradient-text">run</span> is a risk. Every <span class="gradient-text">victory</span> is earned</h1>
+            <p id="subtitle">Dive into Salvaged, and fight your way through ever-changing rooms, ruthless enemies, and unpredictable loot.</p>
+            <h3> Play now and see how far you can go</h3>
+            <div class="hero-buttons">
+                <a href="#play" class="btn primary">Play Now</a>
+                <a href="#media" class="btn secondary">Watch Trailer</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT GAME SECTION -->
+    <section class="section video-section" id="about">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="../assets/placeholder-vid.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h2>About Salvaged</h2>
+            <p>
+                Salvaged is a fast-paced rogue-like dungeon crawler inspired by genre-defining titles like The Binding of Isaac and Enter the Gungeon. Players are thrown into a hostile, ever-changing environment where survival depends on quick thinking, precision, and adaptability.
+                <span id="dots">..</span>
+            </p>
+
+            <div id="more" style="display: none;">
+                <p>
+                Each run challenges you to navigate through a series of procedurally generated rooms, each filled with dangerous enemies, unpredictable hazards, and scarce resources. Your primary objective is to locate the hidden teleporter in every level, which serves as your only escape to the next stage—but reaching it is never easy.
+                </p>
+
+                <p>
+                Combat is intense and unforgiving. You'll rely on a variety of weapons and tools to fight off waves of enemies, each with distinct behaviors and attack patterns. Defeating foes rewards you with salvageable loot, which can enhance your abilities, improve your chances of survival, or completely change your playstyle mid-run.
+                </p>
+
+                <p>
+                However, every encounter comes with risk. Health is limited, mistakes are costly, and death is permanent. When you fall, you lose everything—forcing you to start over, but with the knowledge and experience gained from your previous attempt.
+                </p>
+
+                <p>
+                At its core, Salvaged is about persistence and adaptation. No two runs are ever the same, and success depends on how well you can make use of what you find, react to what the game throws at you, and push forward despite the odds.
+                </p>
+            </div>
+            <button onclick="toggleText()" id="btn">Read more</button>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="section" id="features">
+        <h2>Features</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Procedural Runs</h3>
+                <p>No two runs are ever the same.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Fast-Paced Combat</h3>
+                <p>Dodge enemy attacks, Shoot hostile entities, and Survive intense battles</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Loot and Salvage</h3>
+                <p>Nothing is Infinite. Loot ammos and improve your run</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>PermaDeath</h3>
+                <p>One mistake, and it's all over. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO PLAY SECTION -->
+    <section class="section" id="howtoplay">
+        <h2>How to Play</h2>
+        <ol>
+            <li>Enter a run</li>
+            <li>Clear rooms with waves of enemies</li>
+            <li>Collect loots</li>
+            <li>Find the last room, defeat waves of enemies, and use the teleporter</li>
+            <li>Survive as long as possible</li>
+        </ol>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section class="section" id="media">
+        <h2>Gameplay Preview</h2>
+
+        <div class="media-grid">
+            <div class="media-box">
+                <video controls>
+                    <source src="../assets/placeholder-vid.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="media-box">
+                <img src="../assets/game/salvaged_bg.jpg" alt="Screenshot 1" onclick="openLightbox(this)">
+            </div>
+            <div class="media-box">
+                <img src="../assets/game/salvaged_bg.jpg" alt="Screenshot 1" onclick="openLightbox(this)">
+            </div>
+            <div class="media-box">
+                <img src="../assets/game/salvaged_bg.jpg" alt="Screenshot 1" onclick="openLightbox(this)">
+            </div>
+        </div>
+
+        <div id="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img">
+        </div>
+    </section>
+
+    <!-- DEVELOPERS SECTION -->
+    <section class="section">
+        <h2>Developers</h2>
+        <div id="developers">
+            <div class="card-container">
+
+                <div class="dev-card">
+                    <img src="../assets/game/salvaged_bg.jpg" alt="">
+                    <h3>Bryan Uson</h3>
+                    <p>The Game Developer</p>
+                    <a href="../bryan.html" target="blank"><button>View Portfolio</button></a>
+                </div>
+
+                <div class="dev-card">
+                    <img src="../assets/profile/ianne-pic.jpg" alt="">
+                    <h3>Ghianne Erfe</h3>
+                    <p>Game Co-developer, Sprites Maker, and Web Developer</p>
+                    <a href="../ianne.html"><button>View Portfolio</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="cta-section" id="play">
+        <h2>Ready to test your survival and adaptability skills?</h2>
+        <p>Every run is a risk. Every Victory is earned</p>
+        <br>
+        <a href="#" class="btn primary large">Play Now</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Salvaged. All Rights Reserved</p>
+        <p>Made by Ghianne Erfe and Bryan Uson  </p>
+    </footer>
+    <script src="../components/script.js"></script>
+</body>
+</html>
