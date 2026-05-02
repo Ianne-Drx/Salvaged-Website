@@ -10,14 +10,32 @@
 <body>
   <script src="../components/donut_chart.js"></script>
 
-  <section class="hero-section">
-    <h1>Hey, it's <span>Bryan</span></h1>
-    <p>First year IT student that is more in tune with the logical than creative side of things.</p>
-    <button class="btn">View Projects</button>
-    <button class="btn">Contact Me</button>
-  </section>
+    <header class="hero bryan-hero">
+      <nav class="navbar">
+        <div class="logo">SALVAGED</div>
+          <ul class="nav-links">
+                  <li><a href="../Salvaged.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skill">Skills</a></li>
+                  <li><a href="#projects">My Projects</a></li>
+                  <li><a href="#progress">My Progress</a></li>
+                  <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
 
-  <section class="about-me">
+        <div class="hero-content">
+          <h1>Hey, it's <span class="gradient-text">Bryan</span></h1>
+          <p>First year IT student that is more in tune with the logical than creative side of things.</p>
+
+
+          <div class="hero-buttons">
+            <a href="../files/curr vit ni ghi.docx" download><button class="btn primary">Download CV</button></a>
+            <a href="#projects"><button class="btn secondary">View Projects</button></a>
+          </div>
+        </div>
+  </header>
+
+  <section class="section about-me" id="about">
     <h2>About <span>Me</span></h2>
       <dl class="about-info">
         <dt>Name:</dt>
@@ -41,14 +59,14 @@
         <dt>GitHub:</dt>
         <dd><a href="https://github.com/LegitSicle" style="color: #E74504">LegitSicle</a></dd>
       </dl>
-    <div>
+    <div class="description">
       <p>I'm a first year student at Universidad de Dagupan.</p>
       <p>An Isko ng Bayan (DOST SCHOLAR)</p>
       <p>I'm currently learning the ins and outs of Game Development.</p>
     </div>
   </section>
 
-  <section class="skill-set">
+  <section class="section skill-set" id="skill">
     <h2>My Current Skill Set</h2>
     <div class="container-circ">
       <donut-chart
@@ -77,35 +95,36 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="section projects" id="projects">
     <h2>My Projects</h2>
     <p>Here are some of the projects I've worked on during my first year:</p>
-    
-    <div class="project-card">
-      <img src="/assets/placeholder.jpg" alt="Salvaged: The Website">
-      <h3>Salvaged: The Website</h3>
-      <p>A website which aims to showcase our game, Salvaged.</p>
-      <p>This website also serves as our portfolio.</p>
-    </div>
-    <div class="project-card">
-      <img src="/assets/placeholder.jpg" alt="Salvaged: The Game">
-      <h3>Salvaged: The Game</h3>
-      <p>
-        Our game, Salvaged, is a rogue-like that takes inspirations from the same genre such as The Binding of Isaac, and Enter the Gungeon. 
-        You must navigate through a series of rooms filled with hostiles and find a teleporter that leads to the next level.
-        Utilize weapons to defeat the enemies and salvage any loot out of them. Every encounter runs the risk of losing health until the inevitable death.
-      </p>
-    </div>
-    <div class="project-card">
-      <img src="/assets/minesweeper.png" alt="MineSweeper">
-      <h3>MineSweeper</h3>
-      <p>
-        A simple game made in Java using the built in Swing library for the GUI elements.
-      </p>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="/assets/placeholder.jpg" alt="Salvaged: The Website">
+        <h3>Salvaged: The Website</h3>
+        <p>A website which aims to showcase our game, Salvaged.</p>
+        <p>This website also serves as our portfolio.</p>
+      </div>
+      <div class="project-card">
+        <img src="/assets/placeholder.jpg" alt="Salvaged: The Game">
+        <h3>Salvaged: The Game</h3>
+        <p>
+          Our game, Salvaged, is a rogue-like that takes inspirations from the same genre such as The Binding of Isaac, and Enter the Gungeon. 
+          You must navigate through a series of rooms filled with hostiles and find a teleporter that leads to the next level.
+          Utilize weapons to defeat the enemies and salvage any loot out of them. Every encounter runs the risk of losing health until the inevitable death.
+        </p>
+      </div>
+      <div class="project-card">
+        <img src="/assets/minesweeper.png" alt="MineSweeper">
+        <h3>MineSweeper</h3>
+        <p>
+          A simple game made in Java using the built in Swing library for the GUI elements.
+        </p>
+      </div>
     </div>
   </section>
 
-  <section class="leaning-journey">
+  <section class="section learning-journey" id="progress">
     <h2>My Progress</h2>
     <p>I am currently improving my skills by building small projects and learning new technologies</p>
     <ul>
@@ -118,17 +137,27 @@
     </ul>
   </section>
 
-  <section class="contact-section">
+  <section class="section contact-section" id="contact">
     <h2>Let's Connect</h2>
     <p>Feel free to reach out if you want to collaborate, ask questions, or check out my work.</p>
+    
     <div class="contact-list">
-      <li><a href="https://www.facebook.com/bryanandrei.uson/">Facebook</a></li>
-      <li><a href="https://github.com/LegitSicle">GitHub</a></li>
+      
+      <a href="https://www.facebook.com/bryanandrei.uson/" class="contact-item">
+        <img src="../assets/prof-pic.jpg" alt="Facebook Profile">
+        <span>My Facebook Profile</span>
+      </a>
+
+      <a href="https://github.com/LegitSicle" class="contact-item">
+        <img src="../assets/git-prof-[ic.png" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+
     </div>
   </section>
-  <footer>
+  <footer class="footer">
     <h3>Bryan Andrei L. Uson</h3>
-    <p>&copy; 2023 Bryan Andrei L. Uson. All rights reserved.</p>
+    <p>&copy; 2026 Bryan Andrei L. Uson. All rights reserved.</p>
   </footer>
 </body>
 </html>

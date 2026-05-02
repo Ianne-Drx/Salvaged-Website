@@ -107,6 +107,27 @@ html{
     background-position: center;
     background-repeat: no-repeat;
 }
+.hero::before {
+    margin-top: 65px;
+    height:100vh;
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(circle at center,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.85)
+    );
+
+    z-index: 1;
+}
+/* KEEP TEXT ABOVE */
+.hero-content,
+.hero-buttons {
+    position: relative;
+    z-index: 2;
+}
+
 
 .gradient-text{
     background: linear-gradient(to right, #ffb347, #fc6a0a, #fc6a0a);

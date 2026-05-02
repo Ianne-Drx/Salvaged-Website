@@ -84,7 +84,7 @@ body{
 
 /* ================== HERO ================== */
 
-.hero {
+.hero.ianne-hero {
     margin-top: 65px;
     height: 100vh;
     display: flex;
@@ -99,8 +99,23 @@ body{
     background-size: cover;
     background-position: center;
 }
+.hero.bryan-hero {
+    margin-top: 65px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
 
-/* DARK OVERLAY */
+    position: relative;
+
+    background: url("../assets/salvaged_bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
 .hero::before {
     content: "";
     position: absolute;
@@ -248,7 +263,6 @@ body{
 }
 
 .project-card:hover{
-    /* transform: translateY(-10px); */
     border-color: #ff3b3b;
     box-shadow: 0 0 20px rgba(255, 59, 59, 0.3);
     transform: scale(1.05);
@@ -279,6 +293,14 @@ body{
     background: #292929;
 }
 
+/* LEARNING JOURNEY */
+.learning-journey{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
 
 
 /* ================== LISTS ================== */
@@ -286,6 +308,7 @@ body{
 ul{
     margin-top: 15px;
     padding-left: 20px;
+    list-style: none;
 }
 
 li{
