@@ -186,8 +186,6 @@ html{
     transform: translate(-50%, -50%);
     z-index: -2;
 }
-
-/* DARK OVERLAY (important for readability) */
 .video-section::before {
     content: "";
     position: absolute;
@@ -195,8 +193,6 @@ html{
     background: radial-gradient(circle at center, rgba(18,18,24,0.7), rgba(0,0,0,0.9));
     z-index: -1;
 }
-
-/* CONTENT stays above */
 .video-section .content {
     position: relative;
     z-index: 1;
@@ -356,7 +352,9 @@ ol li {
     object-fit: cover;
     border-radius: 10px;
 }
+
 /* LIGHTBOX */
+
 #lightbox {
     position: fixed;
     inset: 0;
@@ -426,7 +424,7 @@ ol li {
     margin-top: 15px;
     padding: 10px 15px;
     border: none;
-    background: #fc6a0a; /* pumpkin spice */
+    background: #fc6a0a; 
     color: white;
     border-radius: 8px;
     cursor: pointer;
@@ -435,7 +433,7 @@ ol li {
 }
 
 .dev-card button:hover {
-    background: #292929; /* graphite */
+    background: #292929; 
 }
 
 
@@ -466,7 +464,7 @@ ol li {
     padding: 30px 20px;
     text-align: center;
 
-    background: rgba(41, 41, 41, 0.6); /* graphite with transparency */
+    background: rgba(41, 41, 41, 0.6); 
     backdrop-filter: blur(10px);
 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -478,7 +476,7 @@ ol li {
     position: relative;
 }
 
-/* subtle glowing line on top */
+
 .footer::before {
     content: "";
     position: absolute;
@@ -491,20 +489,20 @@ ol li {
     box-shadow: 0 0 10px #fc6a0a;
 }
 
-/* text styling */
+
 .footer p {
     margin: 5px 0;
     letter-spacing: 1px;
 }
 
-/* highlight name */
+
 .footer p:last-child {
     color: #fc6a0a;
     font-weight: 600;
     text-shadow: 0 0 8px rgba(252, 106, 10, 0.4);
 }
 
-/* optional hover glow (small detail but nice) */
+
 .footer:hover {
     box-shadow: 0 -5px 30px rgba(252, 106, 10, 0.15);
 }

@@ -180,10 +180,13 @@ body{
 
 .section h2{
     font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
     margin-bottom: 20px;
+    color: white;
+    position: relative
 }
 
-.section h2::after{
+.section.about h2::after, section.skill-set>h2::after, section.learning-journey>h2::after,section.projects h2::after, section.contact-section>h2::after{
     content: '';
     width: 60px;
     height: 3px;
@@ -217,40 +220,6 @@ body{
 }
 
 
-/* ================== SKILLS (DONUT FIX) ================== */
-
-/* .skills-wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.skill-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 220px;
-    border-radius: 10px;
-
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.05);
-
-    transition: 0.3s;
-}
-
-.skill-card:hover{
-    transform: translateY(-5px);
-    border-color: rgba(252,106,10,0.5);
-    box-shadow: 0 0 20px rgba(252,106,10,0.2);
-}
-
-donut-chart{
-    width: 140px;
-    height: 140px;
-    display: block;
-} */
-
 /* ================== PROJECTS ================== */
 
 .project-grid{
@@ -279,9 +248,10 @@ donut-chart{
 }
 
 .project-card:hover{
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
     border-color: #ff3b3b;
     box-shadow: 0 0 20px rgba(255, 59, 59, 0.3);
+    transform: scale(1.05);
 }
 
 .project-card h3 {
@@ -321,6 +291,41 @@ ul{
 li{
     margin-bottom: 8px;
     color: #ccc;
+}
+
+/* CONTACT */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white; /* change if needed */
+  background: #ff7e33; /* optional */
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.contact-item:hover {
+  background: #af0000;
+  transform: scale(1.02);
+}
+
+.contact-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* makes it round */
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.contact-item span {
+  font-size: 16px;
 }
 
 
