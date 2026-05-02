@@ -267,7 +267,7 @@ body{
     margin-top: 15px;
     padding: 10px 15px;
     border: none;
-    background: #fc6a0a; /* pumpkin spice */
+    background: #fc6a0a; 
     color: white;
     border-radius: 8px;
     cursor: pointer;
@@ -276,7 +276,7 @@ body{
 }
 
 .project-card button:hover {
-    background: #292929; /* graphite */
+    background: #292929;
 }
 
 
@@ -304,8 +304,8 @@ li{
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white; /* change if needed */
-  background: #ff7e33; /* optional */
+  color: white;
+  background: #ff7e33; 
   padding: 10px 15px;
   border-radius: 10px;
   transition: 0.3s;
@@ -319,7 +319,7 @@ li{
 .contact-item img {
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* makes it round */
+  border-radius: 50%;
   object-fit: cover;
   margin-right: 12px;
 }
@@ -339,7 +339,7 @@ li{
     padding: 30px 20px;
     text-align: center;
 
-    background: rgba(41, 41, 41, 0.6); /* graphite with transparency */
+    background: rgba(41, 41, 41, 0.6);
     backdrop-filter: blur(10px);
 
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -351,7 +351,7 @@ li{
     position: relative;
 }
 
-/* subtle glowing line on top */
+
 .footer::before {
     content: "";
     position: absolute;
@@ -364,20 +364,20 @@ li{
     box-shadow: 0 0 10px #fc6a0a;
 }
 
-/* text styling */
+
 .footer p {
     margin: 5px 0;
     letter-spacing: 1px;
 }
 
-/* highlight name */
+
 .footer p:last-child {
     color: #fc6a0a;
     font-weight: 600;
     text-shadow: 0 0 8px rgba(252, 106, 10, 0.4);
 }
 
-/* optional hover glow (small detail but nice) */
+
 .footer:hover {
     box-shadow: 0 -5px 30px rgba(252, 106, 10, 0.15);
 }
