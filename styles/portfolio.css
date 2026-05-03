@@ -18,6 +18,14 @@ body{
     color: #e6e6e6;
     line-height: 1.6;
     overflow-x: hidden;
+
+    background-color: #0f0f0f; /* base color */
+
+    background-image: 
+        linear-gradient(rgba(255, 91, 41, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 91, 41,0.1) 1px, transparent 1px);
+
+    background-size: 40px 40px; /* size of squares */
 }
 
 
