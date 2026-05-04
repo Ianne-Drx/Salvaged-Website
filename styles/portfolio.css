@@ -22,8 +22,8 @@ body{
     background-color: #0f0f0f; /* base color */
 
     background-image: 
-        linear-gradient(rgba(255, 91, 41, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 91, 41,0.1) 1px, transparent 1px);
+        linear-gradient(rgba(255, 91, 41, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 91, 41,0.05) 1px, transparent 1px);
 
     background-size: 40px 40px; /* size of squares */
 }
@@ -411,4 +411,21 @@ li{
 
 .footer:hover {
     box-shadow: 0 -5px 30px rgba(252, 106, 10, 0.15);
+}
+
+.gradient-text{
+    background: linear-gradient(to right, #ffb347, #fc6a0a, #fc6a0a);
+    
+    /* Standard */
+    background-clip: text;
+    color: transparent;
+
+    /* For Chrome/Safari */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+        text-shadow: 
+        0 0 5px rgba(252, 106, 10, 0.6),
+        0 0 10px rgba(252, 106, 10, 0.4),
+        0 0 20px rgba(252, 106, 10, 0.3);
 }
