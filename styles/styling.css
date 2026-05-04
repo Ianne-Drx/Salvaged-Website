@@ -22,7 +22,7 @@ body{
     color: #e6e6e6;
     line-height: 1.6;
     overflow-x: hidden;
-<<<<<<< HEAD
+
     position: relative;
 
     background-color: #0f0f0f; /* base color */
@@ -73,16 +73,7 @@ body::after {
     0%   { transform: translate(10vw, 20vh); }
     50%  { transform: translate(60vw, 40vh); }
     100% { transform: translate(10vw, 20vh); }
-=======
 
-        background-color: #0f0f0f; /* base color */
-
-    background-image: 
-        linear-gradient(rgba(255, 91, 41, 0.15) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 91, 41,0.15) 1px, transparent 1px);
-
-    background-size: 40px 40px; /* size of squares */
->>>>>>> 4646ddf3879c687408621d431dcfd9028852fb38
 }
 
 @keyframes floatGlow2 {
@@ -388,26 +379,62 @@ html{
 }
 
 /* FEATURES */
+
+.carousel {
+    width: 100%;
+    margin-top: 30px;
+    padding: 40px 0;
+
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+
+    animation: scroll 18s linear infinite;
+
+    position: relative;
+    z-index: 1;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
 .feature-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
-.feature-card{
+.feature-card {
+    min-width: 280px;
+
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
+
     padding: 20px;
     border-radius: 10px;
-    transition: 0.3s;
+
     backdrop-filter: blur(8px);
+
+    transition: transform 0.25s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px) scale(1.1);
-  border-color: rgba(252, 106, 10, 0.5);
-  box-shadow: 0 0 20px rgba(255, 59, 59, 0.15);
+    transform: scale(1.05);
+    border-color: rgba(252, 106, 10, 0.5);
+    box-shadow: 0 10px 25px rgba(255, 59, 59, 0.15);
 }
 .feature-card h3 {
   color: #ff3b3b;
@@ -478,8 +505,8 @@ ol {
 
 /* MEDIA SECTION */
 
-<<<<<<< HEAD
-.carousel {
+
+.carousel-media {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -488,7 +515,7 @@ ol {
     overflow: hidden;
 }
 
-.carousel-track {
+.carousel-track-media {
     position: relative;
 }
 
@@ -533,10 +560,6 @@ ol {
 
 
 /* .media-grid{
-=======
-
-.media-grid{
->>>>>>> 4646ddf3879c687408621d431dcfd9028852fb38
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;

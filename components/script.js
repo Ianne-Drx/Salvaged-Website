@@ -15,3 +15,8 @@ function prevSlide() {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
     showSlide(currentSlide);
 }
+
+
+
+const track = document.querySelector(".carousel-track");
+track.innerHTML += track.innerHTML;
