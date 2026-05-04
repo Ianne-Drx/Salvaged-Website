@@ -22,6 +22,7 @@ body{
     color: #e6e6e6;
     line-height: 1.6;
     overflow-x: hidden;
+<<<<<<< HEAD
     position: relative;
 
     background-color: #0f0f0f; /* base color */
@@ -72,6 +73,16 @@ body::after {
     0%   { transform: translate(10vw, 20vh); }
     50%  { transform: translate(60vw, 40vh); }
     100% { transform: translate(10vw, 20vh); }
+=======
+
+        background-color: #0f0f0f; /* base color */
+
+    background-image: 
+        linear-gradient(rgba(255, 91, 41, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 91, 41,0.15) 1px, transparent 1px);
+
+    background-size: 40px 40px; /* size of squares */
+>>>>>>> 4646ddf3879c687408621d431dcfd9028852fb38
 }
 
 @keyframes floatGlow2 {
@@ -467,6 +478,7 @@ ol {
 
 /* MEDIA SECTION */
 
+<<<<<<< HEAD
 .carousel {
     position: relative;
     width: 100%;
@@ -521,6 +533,10 @@ ol {
 
 
 /* .media-grid{
+=======
+
+.media-grid{
+>>>>>>> 4646ddf3879c687408621d431dcfd9028852fb38
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;

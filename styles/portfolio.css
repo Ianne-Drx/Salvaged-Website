@@ -22,8 +22,13 @@ body{
     background-color: #0f0f0f; /* base color */
 
     background-image: 
+<<<<<<< HEAD
         linear-gradient(rgba(255, 91, 41, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 91, 41,0.05) 1px, transparent 1px);
+=======
+        linear-gradient(rgba(255, 91, 41, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 91, 41,0.1) 1px, transparent 1px);
+>>>>>>> 4646ddf3879c687408621d431dcfd9028852fb38
 
     background-size: 40px 40px; /* size of squares */
 }
