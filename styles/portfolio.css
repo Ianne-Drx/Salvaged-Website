@@ -14,14 +14,13 @@ html{
 
 body{
     font-family: "Inter", sans-serif;
-    /* background: radial-gradient(circle at center, #121218, #07070b 60%, #000); */
     color: #e6e6e6;
     line-height: 1.6;
     overflow-x: hidden;
 
     position: relative;
 
-    background-color: #0f0f0f; /* base color */
+    background-color: #0f0f0f; 
 
     background-image: 
         /* GRID (TOP LAYER) */
@@ -106,37 +105,61 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 20px 60px;
+
     background: #29292999;
     backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+
     font-family: "Orbitron", sans-serif;
 }
 
 .logo{
+    font-family: "Orbitron", sans-serif;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #fc6a0a;
+    color: #fc6a0aff;
 }
-
 .nav-links{
     list-style: none;
     display: flex;
     gap: 25px;
 }
-
 .nav-links a{
-    color: #fc6a0a;
+    color: #fc6a0aff;
     text-decoration: none;
     transition: 0.3s;
 }
-
 .nav-links a:hover{
-    color: #e74504;
+    color: #e74504ff;
     text-shadow: 0 0 8px rgba(255, 59, 59, 0.5);
+}
+/* NAV BUTTONS */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fc6b0a50;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.nav:hover {
+    background: rgba(255, 59, 59, 0.7);
 }
 
 
@@ -182,6 +205,17 @@ body::after {
     background: radial-gradient(circle at center,
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.85)
+    );
+
+    z-index: 1;
+}
+.hero.bryan-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: radial-gradient(circle at center,
+        rgba(0,0,0,0.1)
     );
 
     z-index: 1;
@@ -249,6 +283,8 @@ body::after {
 
 .section {
     padding: 25px 15%;
+
+    scroll-margin-top: 80px;
 }
 
 .section h2{
@@ -271,46 +307,102 @@ body::after {
 
 /* ================== ABOUT ================== */
 
-.about-info{
+
+/* container layout */
+.about-container {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 0.5rem 1rem;
-    font-size: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.about-info dt{
-    font-weight: 600;
+/* glass card */
+.about-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* rows */
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* labels */
+.about-info dt {
     font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    color: #ff6a00;
 }
 
-.about-info dd{
+/* values */
+.about-info dd {
     margin: 0;
+    color: #ddd;
 }
 
-.description{
-    margin-top: 20px;
-    font-size: 1.5rem;
+/* links */
+.about-info a {
+    color: #ff3b3b;
+    text-decoration: none;
+}
+
+/* description side */
+.about-desc {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+.about-desc p{
+    margin-bottom: 20px;
+}
+
+/* hover glow effect */
+.about-card:hover {
+    border-color: rgba(252, 106, 10, 0.4);
+    box-shadow: 0 0 25px rgba(252, 106, 10, 0.15);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 
 /* ================== PROJECTS ================== */
 
 .project-grid{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    /* flex-wrap: wrap; */
+    padding-top: 30px;
+
+        align-items: stretch;
 }
 
 .project-card {
-    width: 400px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     border: 1px solid rgba(255, 59, 59, .5);
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+.project-text {
+    flex: 1;
+}
+.project-footer {
+    margin-top: auto;
 }
 
 .project-card img {
@@ -377,7 +469,7 @@ li{
 /* CONTACT */
 .contact-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
 }
 
@@ -386,7 +478,7 @@ li{
   align-items: center;
   text-decoration: none;
   color: white;
-  background: #ff7e33; 
+  /* background: #ff7e33;  */
   padding: 10px 15px;
   border-radius: 10px;
   transition: 0.3s;

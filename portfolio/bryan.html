@@ -35,36 +35,54 @@
         </div>
   </header>
 
-  <section class="section about-me" id="about">
-    <h2>ABOUT ME</h2>
+<section class="section about" id="about">
+  <h2>ABOUT ME</h2>
+
+  <div class="about-container">
+
+    <div class="about-card">
       <dl class="about-info">
-        <dt>Name:</dt>
-        <dd>Bryan Andrei L. Uson</dd>
+        <div class="info-row">
+          <dt>Name</dt>
+          <dd>Bryan Andrei L. Uson</dd>
+        </div>
 
-        <dt>Date of Birth:</dt>
-        <dd>October 10, 2007</dd>
+        <div class="info-row">
+          <dt>Birthday</dt>
+          <dd>October 10, 2007</dd>
+        </div>
 
-        <dt>Address:</dt>
-        <dd>Pantal, Dagupan, Pangasinan, Philippines.</dd>
+        <div class="info-row">
+          <dt>Location</dt>
+          <dd>Pantal, Dagupan, Pangasinan, Philippines.</dd>
+        </div>
 
-        <dt>Zip Code:</dt>
-        <dd>2400</dd>
+        <div class="info-row">
+          <dt>Email</dt>
+          <dd>bryanuson2007@gmail.com</dd>
+        </div>
 
-        <dt>Email:</dt>
-        <dd>bryanuson2007@gmail.com</dd>
+        <div class="info-row">
+          <dt>Phone</dt>
+          <dd>09762857141</dd>
+        </div>
 
-        <dt>Phone:</dt>
-        <dd>09762857141</dd>
-
-        <dt>GitHub:</dt>
-        <dd><a href="https://github.com/LegitSicle" style="color: #E74504">LegitSicle</a></dd>
+        <div class="info-row">
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/LegitSicle">LegitSicle</a></dd>
+        </div>
       </dl>
-    <div class="description">
-      <p>I'm a first year student at <span class="gradient-text">Universidad de Dagupan</span>.</p>
-      <p>An <span class="gradient-text">Isko ng Bayan (DOST SCHOLAR)</span></p>
-      <p>I'm currently learning the ins and outs of Game Development.</p>
     </div>
-  </section>
+
+    <div class="about-desc">
+        <p>I'm a first year student at <span class="gradient-text">Universidad de Dagupan</span>.</p>
+        <p>An <span class="gradient-text">Isko ng Bayan (DOST SCHOLAR)</span></p>
+        <p>I'm currently learning HTML, CSS, and Python.</p>
+        <p>I enjoy creating games and doing projects.</p>
+    </div>
+
+  </div>
+</section>
 
   <section class="section skill-set" id="skill">
     <h2>MY CURRENT SKILL SET</h2>
@@ -103,23 +121,34 @@
       <div class="project-card">
         <img src="/assets/website.png" alt="Salvaged: The Website">
         <h3>Salvaged: The Website</h3>
-        <p>A website which aims to showcase our game, Salvaged.</p>
-        <p>This website also serves as our portfolio.</p>
-        <a href="../Salvaged.html" target="blank"><button>Go to Website</button></a>
+        <div class="project-text">
+          <p>A website which aims to showcase our game, Salvaged.</p>
+          <p>This website also serves as our portfolio.</p>
+        </div>
+        <div class="project-footer">
+          <a href="../Salvaged.html" target="blank"><button>Go to Website</button></a>
+        </div>
       </div>
 
       <div class="project-card">
         <img src="/assets/salvaged_bg_removed.png" alt="Salvaged: The Game">
         <h3>Salvaged: The Game</h3>
-        <p>Our game, Salvaged, is a rogue-like that takes inspirations from the same genre such as The Binding of Isaac, and Enter the Gungeon. You must navigate through a series of rooms filled with hostiles and find a teleporter that leads to the next level. Utilize weapons to defeat the enemies and salvage any loot out of them. Every encounter runs the risk of losing health until the inevitable death.</p>
+        <div class="project-text">
+          <p>Our game, Salvaged, is a rogue-like that takes inspirations from the same genre such as The Binding of Isaac, and Enter the Gungeon. You must navigate through a series of rooms filled with hostiles and find a teleporter that leads to the next level. Utilize weapons to defeat the enemies and salvage any loot out of them. Every encounter runs the risk of losing health until the inevitable death.</p>
+        </div>
+        <div class="project-footer">
+          <a href="../Salvaged.html" target="blank"><button>Play Now</button></a>
+        </div>
       </div>
 
       <div class="project-card">
         <img src="../assets/minesweeper.png" alt="MineSweeper">
         <h3>MineSweeper</h3>
-        <p>
-          A simple game made in Java using the built in Swing library for the GUI elements.
-        </p>
+        <div class="project-text">
+          <p>
+            A simple game made in Java using the built in Swing library for the GUI elements.
+          </p>
+        </div>
       </div>
     </div>
   </section>
