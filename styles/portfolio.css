@@ -453,7 +453,8 @@ body::after {
 
 
 
-/* ================== LISTS ================== */
+
+/* lists */
 
 ul{
     margin-top: 15px;
@@ -478,7 +479,6 @@ li{
   align-items: center;
   text-decoration: none;
   color: white;
-  /* background: #ff7e33;  */
   padding: 10px 15px;
   border-radius: 10px;
   transition: 0.3s;
@@ -502,7 +502,6 @@ li{
 }
 
 
-/* ================== FOOTER ================== */
 
 /* FOOTER */
 
