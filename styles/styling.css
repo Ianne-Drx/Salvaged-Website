@@ -663,6 +663,49 @@ ol {
     box-shadow: 0 -5px 30px rgba(252, 106, 10, 0.15);
 }
 
+/* CONTACT SECTION */
+
+.contact {
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 18px;
+
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.05);
+    color: white;
+
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff3c3c;
+    box-shadow: 0 0 15px rgba(255,60,60,0.3);
+}
+
+.contact-form textarea {
+    resize: none;
+}
 
 /* TEXT ANIMATIONS */
 h2, .feature-card h3, .dev-card h3 {
@@ -690,3 +733,4 @@ h2, .feature-card h3, .dev-card h3 {
     pointer-events: none; /* 👈 important */
     z-index: 1; /* below UI (adjust if needed) */
 }
+
